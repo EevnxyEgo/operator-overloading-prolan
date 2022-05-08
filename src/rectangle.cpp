@@ -5,12 +5,12 @@
 rectangle::rectangle(){}
 
 void rectangle::print(){
-    float widthrec=this->ymax-this->ymin;
-    float lengthrec=this->xmax-this->xmin;
+    float widthrec=(this->ymax)-(this->ymin);
+    float lengthrec=(this->xmax)-(this->xmin);
     widthrec=abs (widthrec);
     lengthrec=abs (lengthrec);
-    cout<< "\ntitik tengah X    : "<<(this->xmax+this->xmin)/2;
-    cout<< "\ntitik tengah Y    : "<<(this->ymax+this->ymin)/2;
+    cout<< "\ntitik tengah X    : "<<((this->xmax)+(this->xmin))/2;
+    cout<< "\ntitik tengah Y    : "<<((this->ymax)+this->ymin)/2;
     cout<< "\nlebar             : "<<widthrec;
     cout<< "\npanjang           : "<<lengthrec;
     cout<< "\nymax              : "<<this->ymax;
@@ -143,13 +143,13 @@ void rectangle::operator--(int){
 
 float rectangle::operator[](int i)
 {
-    if(i=1){
+    if(i==1){
         return this->ymin;
-    }else  if(i=2){
+    }else  if(i==2){
         return this->ymax;
-    }else  if(i=3){
+    }else  if(i==3){
         return this->xmin;
-    }else  if(i=4){
+    }else  if(i==4){
         return this->xmax;
     }
     return 0;
