@@ -22,7 +22,7 @@ void rectangle::print(){
 rectangle::rectangle(float MidPointY, float MidPointX, float lengthrec, float widthrec)
 {
     this->ymin=MidPointY-(0.5*widthrec);
-    this->ymax=MidPointY-(0.5*widthrec);
+    this->ymax=MidPointY+(0.5*widthrec);
     this->xmin=MidPointX-(0.5*lengthrec);
     this->xmax=MidPointX+(0.5*lengthrec);
 }

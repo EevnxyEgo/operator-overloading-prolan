@@ -8,6 +8,7 @@ using namespace std;
 int main(){
     system("CLS||CLEAR");
     cout<<"Operator Overloading Rectangle"<<endl;
+    cout<<"---by ARSENIUS AUDLEY WAHYU DJATMIKO / 5024211030---"<<endl;
     cout<<"RECTANGLE 1"<<endl;
     float MidPointY, MidPointX, lengthrec, widthrec;
     cout<<"panjang          :";
@@ -89,7 +90,6 @@ int main(){
             default:
             cout<<"Pilihan anda tidak ada dalam menu"<<endl;
             break;
-            
         }
     } else{
         cout<<"\nKedua persegi panjang tidak beririsan"<<endl;
